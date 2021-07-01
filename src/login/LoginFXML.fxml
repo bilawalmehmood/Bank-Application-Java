@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginFXMLController">
+   <children>
+      <HBox prefHeight="500.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="infoPane" prefHeight="500.0" prefWidth="280.0" style="-fx-background-radius: 30;" styleClass="linear-grad" stylesheets="@../css/Design.css">
+               <children>
+                  <ImageView fx:id="cancel" fitHeight="32.0" fitWidth="33.0" layoutX="14.0" layoutY="18.0" onMouseClicked="#hendleMouseEvent" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_delete_40px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="58.0" layoutY="56.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../icons/IMG-20200110-WA0061.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="58.0" layoutY="216.0" prefHeight="68.0" prefWidth="200.0" text="MCB BANK" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="282.0" text="Client Softwear" textFill="#fff3f3">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="122.0" layoutY="424.0" text="All Rights Reserved" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <StackPane prefHeight="500.0" prefWidth="320.0">
+               <children>
+                  <Pane fx:id="forgotPasswordPane" onMouseClicked="#hendleMouseEvent" prefHeight="500.0" prefWidth="320.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label fx:id="back" onMouseClicked="#hendleMouseEvent" styleClass="button3" stylesheets="@../css/Design.css" text="Back" textFill="#208694">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="forgotAccountNo" focusTraversable="false" labelFloat="true" layoutX="59.0" layoutY="137.0" prefHeight="35.0" prefWidth="220.0" promptText="Your Account No:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <unFocusColor>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#0e67ab" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </unFocusColor>
+                        </JFXTextField>
+                        <Label layoutX="85.0" layoutY="77.0" text="Recover your PIN here">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="welcomeLbl1" layoutX="83.0" layoutY="30.0" text="Forgot PIN">
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="40.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="forgotAnswer" focusTraversable="false" labelFloat="true" layoutX="60.0" layoutY="290.0" prefHeight="35.0" prefWidth="220.0" promptText="Answer">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <unFocusColor>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#0e67ab" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </unFocusColor>
+                        </JFXTextField>
+                        <ComboBox fx:id="forgotSecurityQ" layoutX="60.0" layoutY="215.0" prefHeight="35.0" prefWidth="220.0" promptText="SECURITY QUESTION" styleClass="field-decoration" stylesheets="@../css/Design.css" />
+                        <Button fx:id="recoverBtn" layoutX="78.0" layoutY="366.0" mnemonicParsing="false" onAction="#hendalAcctionEvent" prefHeight="40.0" prefWidth="182.0" styleClass="button1" stylesheets="@../css/Design.css" text=" Recover PIN">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="EDIT" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="signInPane" prefHeight="500.0" prefWidth="320.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <JFXTextField fx:id="tfAccountNo" focusTraversable="false" labelFloat="true" layoutX="48.0" layoutY="151.0" prefHeight="35.0" prefWidth="240.0" promptText="Account No:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <unFocusColor>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#0e67ab" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </unFocusColor>
+                        </JFXTextField>
+                        <FontAwesomeIconView glyphName="USER" layoutX="18.0" layoutY="186.0" size="20" text="" />
+                        <PasswordField fx:id="tfPin" focusTraversable="false" layoutX="48.0" layoutY="208.0" prefHeight="35.0" prefWidth="240.0" promptText="PIN">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <FontAwesomeIconView glyphName="EYE" layoutX="16.0" layoutY="234.0" size="20" text="" />
+                        <Button fx:id="signInBtn" layoutX="180.0" layoutY="262.0" mnemonicParsing="false" onAction="#hendalAcctionEvent" prefHeight="34.0" prefWidth="110.0" styleClass="button1" stylesheets="@../css/Design.css" text="Sign in">
+                           <graphic>
+                              <FontAwesomeIconView fill="#f8f5f5" glyphName="USER" size="15" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="signUpBtn" layoutX="50.0" layoutY="382.0" mnemonicParsing="false" onAction="#hendalAcctionEvent" prefHeight="40.0" prefWidth="240.0" stylesheets="@../css/Design.css" text="Don't have an account ? Sing up">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="button2" />
+                              <String fx:value="button3" />
+                           </styleClass>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PENCIL" size="15" styleClass="icon_btn" />
+                           </graphic>
+                        </Button>
+                        <Label fx:id="forgotLbl" layoutX="65.0" layoutY="267.0" onMouseClicked="#hendleMouseEvent" prefHeight="25.0" prefWidth="89.0" styleClass="button3" stylesheets="@../css/Design.css" text="Forgot PIN ?" textFill="#0650b9">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label layoutX="31.0" layoutY="73.0" text="Login blow to access your account">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="welcomeLbl" layoutX="42.0" layoutY="26.0" text="Welcome">
+                           <font>
+                              <Font name="Franklin Gothic Medium Cond" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="withdraw.WithdrawAmountController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="505.0" prefWidth="760.0">
+         <children>
+            <Pane layoutX="1.0" prefHeight="130.0" prefWidth="760.0" styleClass="linear-grad" stylesheets="@../css/Design.css">
+               <children>
+                  <Label layoutX="529.0" layoutY="4.0" prefHeight="57.0" prefWidth="26.0" text="\$" textFill="WHITE">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="balance" layoutX="555.0" layoutY="12.0" prefHeight="50.0" prefWidth="200.0" text=" 00000" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Calibri" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="317.0" layoutY="18.0" text="Current Balance" textFill="#ffb9b9">
+                     <font>
+                        <Font name="Impact" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="66.0" prefWidth="251.0" text="Withdraw " textFill="#f8f8f8">
+                     <font>
+                        <Font name="Calibri Bold" size="55.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="317.0" layoutY="75.0" text="Your Account NO" textFill="#ffb9b9">
+                     <font>
+                        <Font name="Impact" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="account_No" layoutX="555.0" layoutY="69.0" prefHeight="50.0" prefWidth="200.0" text=" 00000" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Calibri" size="40.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="532.0" layoutY="104.0" size="25" text="" />
+                  <Label layoutX="92.0" layoutY="61.0" prefHeight="66.0" prefWidth="200.0" text="Amount" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Calibri Bold" size="55.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXTextField fx:id="amount_tf" labelFloat="true" layoutX="261.0" layoutY="198.0" prefHeight="40.0" prefWidth="300.0" promptText="Amount">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0e67ab" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <PasswordField fx:id="pin_tf" focusTraversable="false" layoutX="261.0" layoutY="264.0" prefHeight="40.0" prefWidth="300.0" promptText="Enter Account PIN">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="withdrawBtn" layoutX="336.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#withdrawAmount" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@../css/Design.css" text="   Withdraw">
+               <graphic>
+                  <FontAwesomeIconView fill="#f8f5f5" glyphName="ARROW_DOWN" size="15" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

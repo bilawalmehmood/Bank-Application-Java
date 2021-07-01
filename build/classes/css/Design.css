@@ -1,0 +1,143 @@
+/* BUTTONS Proparty*/
+
+.button1 {
+    -fx-background-color: #2262C6;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-style: solid;
+}
+.button1 :hover  {
+    -fx-text-fill: #431F0A;
+    -fx-cursor:  hand;
+   
+    
+}
+.button1 :pressed {
+    -fx-text-fill: #A0AFF5;
+}
+.button1 :active {
+    -fx-text-fill: #80AFF5;
+}
+
+.button2 {
+    -fx-background-color: #D5CBEB;
+    -fx-text-fill: #371897;
+    -fx-background-radius: 8;
+    -fx-border-color: #6F4CBB;
+    -fx-border-radius: 8;
+}
+.button2 :hover {
+    -fx-background-color: #E4EEFD;
+    
+}
+.button2 :pressed {
+    -fx-background-color: #E4EEFD;
+    -fx-background-radius: 30;
+}
+
+.button3 :hover {
+    -fx-text-fill: #431F0A;
+    -fx-cursor:  hand ;  
+}
+.icon_btn {
+    -fx-fill: #371897;
+}
+
+
+
+/* Chart proparty*/
+
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+  
+}
+.chart-plot-background{
+    -fx-background-color: transparent;
+    
+}
+.chart-pie {
+    -fx-background-color: transparent;
+    
+}
+.linear-grad {
+    -fx-background-color: linear-gradient(to bottom left, #6F4CBB, #431FA0);
+}
+
+.field-decoration {
+    -fx-background-radius: 70px;
+    -fx-border-radius: 70px;
+    -fx-border-color: #6F4CBB;
+    
+}
+.dashboard-top{
+    -fx-background-color: #002847;
+}
+.dashboard-sidebar{
+    -fx-background-color: #00508F;
+}
+.dashboard-profilepic{
+    -fx-background-color: #3B4463;
+}
+.dashboard-manu{
+    -fx-text-fill: #D3D3D3;
+    -fx-background-color: #00508F;
+    -fx-font-size: 18px; 
+    -fx-font-family: calibri;
+    -fx-text-transform: uppercase;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+.dashboard-manu:hover{
+    -fx-text-fill: white;
+    -fx-border-width: 0px 0px 0px 10px;
+    -fx-border-color: #3B4463;
+    -fx-background-color: transparent;
+}
+.dashboard-manu:pressed{
+    -fx-text-fill: #0DA9FD;
+    -fx-background: transparent;
+    -fx-border-color: #0D8BC5;
+}
+.dashboard-manu-icons{
+    -fx-fill: #D3D3D3;
+}
+.dashboard-manu:pressed.dashboard-manu-icons{
+     -fx-fill: #0DA9F1;
+}
+.dashboard-btn{
+    -fx-background-color: white;
+    -fx-text-fill: #0DA9F1;
+}
+.dashboard-btn:hover{
+    -fx-background-color: white;
+    -fx-text-fill: #0DA9F1;
+    -fx-cursor: hand;
+}
+.withdraw_button {
+    -fx-background-color: #F49C28;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-style: solid;
+}
+.change_pin_button {
+    -fx-background-color: #5CCF6F;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-style: solid;
+}
+.transfer_button {
+    -fx-background-color: #90C8D5;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: white;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-style: solid;
+}
